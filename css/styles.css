@@ -562,6 +562,10 @@ color: var(--color-ocean);
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-open {
@@ -575,7 +579,6 @@ color: var(--color-ocean);
 }
 
 .modal {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 408px;
@@ -583,8 +586,69 @@ color: var(--color-ocean);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--color-dairy);
     border-radius: 4px;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
+.modal-button {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background-color: var(--color-cornflower);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
 
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--color-ocean);
+    border: none;
+}
 
+.button-close:hover,
+.button-close:focus {
+    fill: var(--color-white);
+}
+
+.text-modalka {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-navy-blue);
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.form-div {
+    margin-bottom: 8px;
+}
+
+.form-div-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-light-slate);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+    fill: var(--color-iris);
+}
