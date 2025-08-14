@@ -670,11 +670,11 @@ color: var(--color-ocean);
 .modal-button:focus {
     background-color: var(--color-ocean);
     border: none;
+    fill: var(--color-white);
 }
 
-.modal-button:hover,
-.modal-button:focus {
-    fill: var(--color-white);
+.button-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-modalka {
@@ -706,16 +706,19 @@ color: var(--color-ocean);
 }
 
 .form-div {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .label-div {
     position: relative;
-    margin-bottom: 16px;
 }
 
 .form-input:focus {
     border-color: var(--color-iris);
+}
+
+.form-input:focus + .form-icon {
+    fill: var(--color-iris);
 }
 
 .form-input {
@@ -743,7 +746,7 @@ color: var(--color-ocean);
     padding: 8px 16px;
     outline: transparent;
     resize: none;
-    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-area:focus {
@@ -779,7 +782,7 @@ color: var(--color-ocean);
     fill: transparent;
 }
 
-.checkbox-input:checked .span-checkbox {
+.checkbox-input:checked + span-checkbox {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
