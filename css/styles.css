@@ -693,8 +693,23 @@ color: var(--color-ocean);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
-    display: block;
-    margin-bottom: 4px;
+    /* display: block; */
+    display: flex;
+    margin-bottom: 8px;
+    /* margin-bottom: 4px; */
+    align-items: center;
+    gap: 8px;
+}
+
+.form-div-vector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-light-slate);
 }
 
 .form-icon {
@@ -792,11 +807,21 @@ color: var(--color-ocean);
     fill: var(--color-cloud);
 }
 
+.checkbox-input:checked + .span-checkbox .form-icon {
+    fill: var(--color-white);
+}
+
 .highlight {
     color: var(--color-iris);
 }
 
-
+.form-icon-vector {
+    position: absolute;
+    fill: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
