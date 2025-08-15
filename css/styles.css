@@ -706,6 +706,10 @@ color: var(--color-ocean);
 }
 
 .form-div {
+    margin-bottom: 8px;
+}
+
+.form-div-com {
     margin-bottom: 16px;
 }
 
@@ -782,7 +786,7 @@ color: var(--color-ocean);
     fill: transparent;
 }
 
-.checkbox-input:checked + span-checkbox {
+.checkbox-input:checked + .span-checkbox {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
