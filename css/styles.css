@@ -762,6 +762,10 @@ color: var(--color-ocean);
     margin-bottom: 24px;
 }
 
+.form-div-coment {
+    margin-bottom: 16px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
