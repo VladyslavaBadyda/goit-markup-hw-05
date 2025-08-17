@@ -604,9 +604,6 @@ color: var(--color-ocean);
     margin-left: 16px;
 }
 
-
-
-
 /*//====================================MODALKA=========================================// */
 
 .backdrop {
@@ -791,15 +788,15 @@ color: var(--color-ocean);
     fill: transparent;
 }
 
-.checkbox-input:checked + .span-checkbox {
+.visually-hidden:checked + .form-div-label .span-checkbox {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
 }
-
-.checkbox-input:checked + .span-checkbox .form-icon {
+/* 
+.visually-hidden:checked + .form-div-label .form-icon {
     fill: var(--color-white);
-}
+} */
 
 .highlight {
     color: var(--color-iris);
