@@ -793,10 +793,6 @@ color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
 }
-/* 
-.visually-hidden:checked + .form-div-label .form-icon {
-    fill: var(--color-white);
-} */
 
 .highlight {
     color: var(--color-iris);
