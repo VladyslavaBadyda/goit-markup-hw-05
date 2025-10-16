@@ -762,7 +762,7 @@ color: var(--color-ocean);
 }
 
 .text-area::placeholder {
-    color: var(--color-navy-blue-modal);
+    color: var(--color-light-slate);
 }
 
 .text-area:focus {
